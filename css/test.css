@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article .housingCards {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: #0000006b 0 0 30px;
+    color: black;
+}
+
+
+article .housingCards .look img {
+    width: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+article .housingCards .description h3 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+article .housingCards .description p {
+    font-size: 14px;
+    margin: 0 5px 5px 5px;
+    pointer-events: none;
+}
+
+article .housingCards .description .housingRating {
+    margin: 5px;
+}
+
+article .housingCards .description .housingRating img {
+    width: 14px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+.popularCards {
+    margin: 20px;
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: #0000006b 0 0 30px;
+    color: black;
+}
+
+article .popularCards .look img {
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0 0 20px;
+}
+
+article .popularCards .description {
+    display: flex;
+    flex-direction: column;
+}
+
+article .popularCards .description h3 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+article .popularCards .description p {
+    font-size: 14px;
+    margin: 0 5px 5px 5px;
+}
+
+article .popularCards .description .housingRating {
+    margin: 5px;
+    height: 55%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+article .popularCards .description .housingRating img {
+    width: 14px;
+}
