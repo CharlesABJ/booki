@@ -211,6 +211,10 @@ main {
   color: #0065FC;
 }
 
+#section2 .housing article .housingCards .description .housingRating i:hover {
+  color: #F2F2F2;
+}
+
 #section2 .housing article .housingCards .description .housingRating .grey {
     color: #F2F2F2;
   }
@@ -270,6 +274,10 @@ main {
 
 #section2 .popular article .popularCards .description .housingRating i {
     color: #0065FC;
+}
+
+#section2 .popular article .popularCards .description .housingRating i:hover {
+    color: #F2F2F2;;
 }
 
 #section2 .popular article .popularCards .description .housingRating .grey {
