@@ -70,6 +70,17 @@ main {
     display: flex;
 }
 
+#section1 form label {
+    background: #F2F2F2;
+    width: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+
+}
+
 #section1 form input {
     margin: 0;
     padding: 10px;
@@ -83,36 +94,26 @@ main {
     border: solid 1px #F2F2F2;
 }
 
-#section1 form label {
-    background: #F2F2F2;
-    width: 49px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 0 0 15px;
-
-}
-
 #section1 form .submit {
     background: #0065FC;
     color: #ffffff;
     border: none;
     border-radius: 0 15px 15px 0;
+    cursor: pointer;
 }
 
 
 #section1 nav {
     display: flex;
-    justify-content: baseline;
-    align-items: center;
+  align-items: center;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 30px 0 40px 0;
 }
 
 #section1 nav ul {
     display: flex;
     list-style: none;
-    margin: 0 0 0 15px ;
+    margin: 0 0 0 15px;
 }
 
 #section1 nav ul li {
@@ -141,9 +142,8 @@ main {
     color: #0065FC;
 }
 
-#section1 nav + p {
+#section1 nav+p {
     display: flex;
-    justify-content: baseline;
     align-items: center;
 }
 
@@ -153,87 +153,137 @@ main {
     justify-content: center;
 }
 
-/* .section1 p span i{
-  color: #0065FC;
-  font-size: 10px;
-  padding: 5px;
-  border-radius: 90px;
-  border: 1px solid blue;
-} */
+#section1 p span i {
+    color: #0065FC;
+    padding: 5px 10px;
+    border: #D9D9D9 solid 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 
 /* ====== Section 2 ====== */
 
 #section2 {
     display: flex;
+    margin: 50px 0 0 0;
 }
 
+
+
+
+/* ---Housing--- */
 
 #section2 .housing {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 50px;
     margin-right: auto;
-    
+    height: 626px;
+    width: 56%;
 }
 
-#section2 .housing article .housingCards {
-    display: inline-block;
+#section2 .housing h2 {
+    margin: 0 0 30px 0;
+}
+
+#section2 .housing.cardsZone {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section2 .housing .cardsZone article .housingCards {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     padding: 5px;
     border-radius: 20px;
     background: white;
     box-shadow: #0000006b 0 0 30px;
     color: black;
+    /* width: 255px; */
 }
 
 
-#section2 .housing article .housingCards .look img {
-    width: 200px;
+#section2 .housing .cardsZone article .housingCards .look img {
+    width: 246px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
-#section2 .housing article .housingCards .description h3 {
+#section2 .housing .cardsZone article .housingCards .description {
+    background: rgb(223, 137, 26);
+}
+
+#section2 .housing .cardsZone article .housingCards .description h3 {
     font-size: 16px;
     margin: 5px;
 }
 
-#section2 .housing article .housingCards .description p {
+#section2 .housing .cardsZone article .housingCards .description .housingPrice {
     font-size: 14px;
     margin: 0 5px 5px 5px;
 }
 
-#section2 .housing article .housingCards .description .housingRating {
+
+#section2 .housing .cardsZone article .housingCards .description .housingRating {
     margin: 5px;
 }
 
-#section2 .housing article .housingCards .description .housingRating i {
-  color: #0065FC;
-}
-
-#section2 .housing article .housingCards .description .housingRating i:hover {
-  color: #F2F2F2;
-}
-
-#section2 .housing article .housingCards .description .housingRating .grey {
-    color: #F2F2F2;
-  }
-
-  #section2 .housing article .housingCards .description .housingRating .grey:hover {
+#section2 .housing .cardsZone article .housingCards .description .housingRating i {
     color: #0065FC;
-    transition: 0.3s all;
-  }
+    transition: 1s all;
+}
 
-#section2 .popular .section2 .popular {
+#section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
+    color: #F2F2F2;
+    transition: 0.2s all;
+}
+
+#section2 .housing .cardsZone article .housingCards .description .housingRating :last-child {
+    color: #F2F2F2;
+    transition: 0.3s all;
+}
+
+#section2 .housing .cardsZone article .housingCards .description .housingRating :last-child:hover {
+    color: #0065FC;
+    transition: 0.2s all;
+}
+
+#section2 .housing > :last-child{
+    text-decoration: none;
+    font-weight: bold;
+    align-items: flex-end;
+    color: #000000;
+    background: #08fc00;
+    display: flex;
+}
+
+/* ---Popular--- */
+
+#section2 .popular {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 50px;
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#section2 .popular h2 {
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2 .popular h2 i {
+    color: #0065FC;
 }
 
 
 #section2 .popular .popularCards {
-    margin: 20px;
+    margin: 0 20px;
     display: flex;
     text-decoration: none;
     padding: 5px;
@@ -247,11 +297,13 @@ main {
     width: 137px;
     height: 144px;
     border-radius: 20px 0 0 20px;
+    object-fit: cover;
 }
 
 #section2 .popular article .popularCards .description {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #section2 .popular article .popularCards .description h3 {
@@ -266,41 +318,71 @@ main {
 
 #section2 .popular article .popularCards .description .housingRating {
     margin: 5px;
-    height: 55%;
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
+    padding: 5px 0;
 }
 
 #section2 .popular article .popularCards .description .housingRating i {
     color: #0065FC;
+    transition: 1s all;
 }
 
-#section2 .popular article .popularCards .description .housingRating i:hover {
-    color: #F2F2F2;;
+#section2 .popular article .popularCards .description .housingRating i:hover~i {
+    color: #F2F2F2;
+    transition: 0.2s all;
 }
 
-#section2 .popular article .popularCards .description .housingRating .grey {
+#section2 .popular article .popularCards .description .housingRating :last-child {
     color: #F2F2F2;
 }
 
-#section2 .popular article .popularCards .description .housingRating .grey:hover{
+#section2 .popular article .popularCards .description .housingRating :last-child:hover {
     color: #0065FC;
-    transition: 0.3s all;
+    transition: 0.2s all;
 }
 
 
 /* ====== Section 3 ====== */
 
+#section3 {
+    margin: 60px 0;
+}
 
-#section3 article a img {
+#section3 h2 {
+    margin: 0 0 30px 0;
+}
+
+
+#section3 .activity {
+    display: flex;
+}
+
+
+#section3 .activity article .activityCards {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000000;
+    box-shadow: #0000006b 0 0 20px;
+}
+
+#section3 .activity article .activityCards .look img {
     width: 300px;
     height: 445px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    margin: 0;
 }
 
-#section3 article a{
-    border-radius: 20px;
+#section3 .activity article .activityCards .description {
+    background: red;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+#section3 .activity article .activityCards .description h3 {
+    padding: 0 5px;
 }
 
 /* >==================== PAGE CONTENT OF ====================> */
@@ -327,7 +409,7 @@ footer .footNav p {
 }
 
 footer .footNav div {
- width: 33%;
+    width: 33%;
 }
 
 footer .footNav ul {
@@ -337,12 +419,15 @@ footer .footNav ul {
 footer .footNav ul li a {
     text-decoration: none;
     color: #000000;
-    margin: 0 0 10px 0 ;
+    margin: 0 0 10px 0;
     display: inline-block;
     font-size: 16px;
 }
 
 
+footer .footNav ul li a:hover {
+    color: #5e5e5e;
+}
 
 
 
