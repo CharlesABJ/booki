@@ -105,7 +105,7 @@ main {
 
 #section1 nav {
     display: flex;
-  align-items: center;
+    align-items: center;
     font-weight: bold;
     margin: 30px 0 40px 0;
 }
@@ -182,6 +182,8 @@ main {
     margin-right: auto;
     height: 626px;
     width: 56%;
+    display: flex;
+    flex-direction: column;
 }
 
 #section2 .housing h2 {
@@ -251,13 +253,16 @@ main {
     transition: 0.2s all;
 }
 
-#section2 .housing > :last-child{
+#section2 .housing> :last-child {
     text-decoration: none;
     font-weight: bold;
     align-items: flex-end;
     color: #000000;
-    background: #08fc00;
-    display: flex;
+    margin-top: auto;
+    width: 105px;
+    padding: 5px;
+    text-align: center;
+
 }
 
 /* ---Popular--- */
