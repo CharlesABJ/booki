@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a117eb47ea.js" crossorigin="anonymous"></script>
+	<title>Document</title>
+<style>
+
+
+/* ---Popular--- */
+
+#section2 .popular {
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#section2 .popular h2 {
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+
+}
+
+#section2 .popular h2 i {
+    color: #0065FC;
+}
+
+
+#section2 .popular .popularCards {
+    margin: 0 20px;
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: #0000006b 0 0 30px;
+    color: black;
+}
+
+#section2 .popular article .popularCards .look img {
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+#section2 .popular article .popularCards .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section2 .popular article .popularCards .description h3 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+#section2 .popular article .popularCards .description p {
+    font-size: 14px;
+    margin: 0 5px 5px 5px;
+}
+
+#section2 .popular article .popularCards .description .housingRating {
+    margin: 5px;
+    display: flex;
+    padding: 5px 0;
+}
+
+#section2 .popular article .popularCards .description .housingRating i {
+    color: #0065FC;
+    transition: 1s all;
+}
+
+#section2 .popular article .popularCards .description .housingRating i:hover~i {
+    color: #F2F2F2;
+    transition: 0.2s all;
+}
+
+#section2 .popular article .popularCards .description .housingRating :last-child {
+    color: #F2F2F2;
+}
+
+#section2 .popular article .popularCards .description .housingRating :last-child:hover {
+    color: #0065FC;
+    transition: 0.2s all;
+}
+
+</style>
+
+</head>
+<body>
+
+
+	<section id="section2">
+		
+
+
+		<aside class="popular">
+			<h2>Les plus populaires<span><i class="fa-solid fa-chart-line"></i></span></h2>
+
+			<div class="cardsZone">
+
+				<article>
+					<a class="popularCards" href="#">
+						<div class="look">
+							<img src="images/hebergements/img1.jpg" alt="Auberge de La Canebière">
+						</div>
+						<div class="description">
+							<div>
+								<h3 class="housingName">Auberge de La Canebière</h3>
+								<p class="housingPrice">Nuit à partir de 25<b>€</b></p>
+							</div>
+							<div class="housingRating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</a>
+				</article>
+			</div>
+		</aside>
+
+		
+
+	</section>
+	
+</body>
+</html>

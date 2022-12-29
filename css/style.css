@@ -200,7 +200,7 @@ main {
 }
 
 #section2 .housing .cardsZone article .housingCards {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     text-decoration: none;
     padding: 5px;
@@ -216,10 +216,6 @@ main {
     width: 246px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-}
-
-#section2 .housing .cardsZone article .housingCards .description {
-    background: rgb(223, 137, 26);
 }
 
 #section2 .housing .cardsZone article .housingCards .description h3 {
