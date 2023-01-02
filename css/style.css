@@ -118,6 +118,12 @@ main {
     cursor: pointer;
 }
 
+#section1 form .submit i {
+    display: none;
+    color: #ffffff;
+}
+
+
 /* ----Filtres---- */
 
 #section1 nav {
@@ -480,31 +486,31 @@ footer .footNav ul li a:hover {
 
 /* <==================== RESPONSIVE ON ====================< */
 
-@media screen and (max-width: 768px ) { 
+@media screen and (max-width: 768px) {
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     header .logo a img {
         margin: 30px;
     }
 
-    header .headNav{
+    header .headNav {
         width: 100%;
     }
 
     header .headNav ul {
         width: 100%;
-       justify-content: center;
-       width: 100%;
+        justify-content: center;
+        width: 100%;
     }
 
-    header .headNav ul li{
+    header .headNav ul li {
         width: 100%;
         text-align: center;
-    
+
     }
 
     header .headNav ul li a {
@@ -522,7 +528,30 @@ footer .footNav ul li a:hover {
         margin: 70px 50px 50px;
     }
 
+    /* -===================================== */
 
+    #section1 form .submit i {
+        display: block;
+        color: #ffffff;
+    }
+
+    #section1 form .submit span {
+        display: none;
+    }
+
+    #section1 nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #section1 nav ul li {
+        width: 40%;
+    }
+
+    #section1 nav ul li a {
+        font-size: 11px;
+        padding: 1rem 1.3rem;
+    }
 
     footer .footNav {
         flex-direction: column;
