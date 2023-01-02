@@ -39,7 +39,7 @@ header .headNav ul li a {
 }
 
 header .headNav ul li a:hover {
-    transition: 1.3s all;
+    transition: border-top 1.3s, color 0.5s;
     border-top: solid 2px #0065FC;
     color: #0065FC;
 }
@@ -65,6 +65,9 @@ main {
     font-size: 16px;
 }
 
+
+/* ----Localisation---- */
+
 #section1 form {
     margin: 30px 0;
     display: flex;
@@ -72,7 +75,7 @@ main {
 
 #section1 form label {
     background: #F2F2F2;
-    width: 49px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,6 +84,7 @@ main {
 
 }
 
+#section1 form button,
 #section1 form input {
     margin: 0;
     padding: 10px;
@@ -88,10 +92,13 @@ main {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: 16px;
 }
+
 
 #section1 form #localisation {
     border: solid 1px #F2F2F2;
+    width: 210px;
 }
 
 #section1 form .submit {
@@ -99,11 +106,11 @@ main {
     color: #ffffff;
     border: none;
     border-radius: 0 15px 15px 0;
-    padding:0 20px;
+    padding: 0 15px;
     cursor: pointer;
-    font-size: 18px;
 }
 
+/* ----Filtres---- */
 
 #section1 nav {
     display: flex;
@@ -112,14 +119,19 @@ main {
     margin: 30px 0 40px 0;
 }
 
+#section1 nav p {
+    font-size: 18px;
+}
+
 #section1 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0 0 0 15px;
 }
 
 #section1 nav ul li {
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 #section1 nav ul li a {
@@ -131,7 +143,7 @@ main {
     font-size: 17px;
     border: solid 2px #D9D9D9;
     border-radius: 25px;
-    padding: 10px 14px;
+    padding: 0.7rem 1.3rem;
 }
 
 #section1 nav ul li a:hover {
@@ -171,6 +183,7 @@ main {
 #section2 {
     display: flex;
     margin: 50px 0 0 0;
+    justify-content: space-between;
 }
 
 
@@ -181,39 +194,46 @@ main {
 #section2 .housing {
     background: #F2F2F2;
     border-radius: 20px;
-    padding: 50px;
-    margin-right: auto;
+    padding: 40px;
+    width: 60%;
     height: 626px;
-    width: 56%;
     display: flex;
     flex-direction: column;
 }
 
 #section2 .housing h2 {
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
     font-size: 22px;
 }
 
-#section2 .housing.cardsZone {
+#section2 .housing .cardsZone {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#section2 .housing .cardsZone article {
+    margin: 1rem 0;
+    width: 31%;
 }
 
 #section2 .housing .cardsZone article .housingCards {
-    display: inline-block;
-    flex-direction: column;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     padding: 5px;
     border-radius: 20px;
     background: white;
     box-shadow: #0000006b 0 0 30px;
-    color: black;
-    /* width: 255px; */
+    color: #000000;
 }
 
 
 #section2 .housing .cardsZone article .housingCards .look img {
-    width: 246px;
+    width: 100%;
+    height: 124px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -270,14 +290,13 @@ main {
 #section2 .popular {
     background: #F2F2F2;
     border-radius: 20px;
-    padding: 50px;
-    margin-left: auto;
+    padding: 40px;
     display: flex;
     flex-direction: column;
 }
 
 #section2 .popular h2 {
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
     display: flex;
     justify-content: space-between;
     font-size: 22px;
@@ -288,8 +307,11 @@ main {
     color: #0065FC;
 }
 
+#section2 .popular article {
+    margin: 1rem 0;
+}
 
-#section2 .popular .popularCards {
+#section2 .popular article .popularCards {
     margin: 0 20px;
     display: flex;
     text-decoration: none;
@@ -298,11 +320,13 @@ main {
     background: white;
     box-shadow: #0000006b 0 0 30px;
     color: black;
+    height: 144px;
+    width: 343px;
 }
 
 #section2 .popular article .popularCards .look img {
-    width: 137px;
-    height: 144px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
@@ -360,11 +384,16 @@ main {
     font-size: 22px;
 }
 
-
 #section3 .activity {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+#section3 .activity article {
+    width: 302px;
+    height: 445px;
+}
 
 #section3 .activity article .activityCards {
     display: flex;
@@ -373,24 +402,19 @@ main {
     text-decoration: none;
     color: #000000;
     box-shadow: #0000006b 0 0 20px;
+    width: 100%;
+    height: 100%;
 }
 
-#section3 .activity article .activityCards .look img {
-    width: 300px;
-    height: 445px;
+#section3 .activity article .activityCards img {
+    width: 100%;
+    height: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    margin: 0;
 }
 
-#section3 .activity article .activityCards .description {
-    background: red;
-    padding: 20px;
-    border-radius: 0 0 20px 20px;
-}
-
-#section3 .activity article .activityCards .description h3 {
-    padding: 0 5px;
+#section3 .activity article .activityCards h3 {
+    padding: 0.9rem 1.5rem;
     font-size: 16px;
 }
 
