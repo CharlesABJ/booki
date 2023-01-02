@@ -9,7 +9,10 @@
 
 body {
     max-width: 1400px;
+    margin: 0 auto;
+    /* Utiliser margin pour centrer horizontalement */
 }
+
 
 
 /* <==================== HEADER ON ====================< */
@@ -39,7 +42,7 @@ header .headNav ul li a {
 }
 
 header .headNav ul li a:hover {
-    transition: border-top 1.3s, color 0.5s;
+    transition: border 1.3s, color 0.5s;
     border-top: solid 2px #0065FC;
     color: #0065FC;
 }
@@ -100,6 +103,11 @@ main {
     border: solid 1px #F2F2F2;
     width: 210px;
 }
+
+#section1 form #localisation::placeholder {
+    color: #000000;
+}
+
 
 #section1 form .submit {
     background: #0065FC;
@@ -172,7 +180,7 @@ main {
     color: #0065FC;
     padding: 5px 10px;
     border: #D9D9D9 solid 1px;
-    border-radius: 50%;
+    border-radius: 24px;
     cursor: pointer;
 }
 
@@ -195,7 +203,7 @@ main {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
-    width: 60%;
+    width: calc(66.66% - 10px);
     height: 626px;
     display: flex;
     flex-direction: column;
@@ -258,10 +266,10 @@ main {
     transition: 1s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
+/* #section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
     color: #F2F2F2;
     transition: 0.2s all;
-}
+} */
 
 #section2 .housing .cardsZone article .housingCards .description .housingRating :last-child {
     color: #F2F2F2;
@@ -293,6 +301,7 @@ main {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    width: calc(33.33% - 20px);
 }
 
 #section2 .popular h2 {
@@ -312,7 +321,7 @@ main {
 }
 
 #section2 .popular article .popularCards {
-    margin: 0 20px;
+    margin: 0 0 20px;
     display: flex;
     text-decoration: none;
     padding: 5px;
@@ -358,10 +367,10 @@ main {
     transition: 1s all;
 }
 
-#section2 .popular article .popularCards .description .housingRating i:hover~i {
+/* #section2 .popular article .popularCards .description .housingRating i:hover~i {
     color: #F2F2F2;
     transition: 0.2s all;
-}
+} */
 
 #section2 .popular article .popularCards .description .housingRating :last-child {
     color: #F2F2F2;
@@ -427,7 +436,6 @@ main {
 footer {
     background: #F2F2F2;
     margin: 50px 50px 0 50px;
-    display: flex;
 }
 
 footer .footNav {
@@ -471,3 +479,56 @@ footer .footNav ul li a:hover {
 
 
 /* <==================== RESPONSIVE ON ====================< */
+
+@media screen and (max-width: 768px ) { 
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .logo a img {
+        margin: 30px;
+    }
+
+    header .headNav{
+        width: 100%;
+    }
+
+    header .headNav ul {
+        width: 100%;
+       justify-content: center;
+       width: 100%;
+    }
+
+    header .headNav ul li{
+        width: 100%;
+        text-align: center;
+    
+    }
+
+    header .headNav ul li a {
+        width: 100%;
+        border-top: none;
+        border-bottom: solid 2px #ffffff;
+    }
+
+    header .headNav ul li a:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    main {
+        margin: 70px 50px 50px;
+    }
+
+
+
+    footer .footNav {
+        flex-direction: column;
+    }
+
+    footer .footNav div {
+        width: 100%;
+    }
+}
