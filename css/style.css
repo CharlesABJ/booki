@@ -451,14 +451,14 @@ footer .footNav {
     width: 100%;
 }
 
-
-footer .footNav p {
-    font-weight: bold;
-    padding: 15px 0;
-}
-
 footer .footNav div {
     width: 33%;
+}
+
+footer .footNav div p {
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 18px;
 }
 
 footer .footNav ul {
@@ -487,6 +487,7 @@ footer .footNav ul li a:hover {
 /* <==================== RESPONSIVE ON ====================< */
 
 @media screen and (max-width: 768px) {
+
     header {
         display: flex;
         flex-direction: column;
@@ -494,7 +495,7 @@ footer .footNav ul li a:hover {
     }
 
     header .logo a img {
-        margin: 30px;
+        margin: 25px 0 20px;
     }
 
     header .headNav {
@@ -503,20 +504,19 @@ footer .footNav ul li a:hover {
 
     header .headNav ul {
         width: 100%;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
     }
 
     header .headNav ul li {
-        width: 100%;
         text-align: center;
-
+        width: 100%;
     }
 
+
     header .headNav ul li a {
-        width: 100%;
         border-top: none;
         border-bottom: solid 2px #ffffff;
+        padding: 25px;
     }
 
     header .headNav ul li a:hover {
@@ -525,10 +525,15 @@ footer .footNav ul li a:hover {
     }
 
     main {
-        margin: 70px 50px 50px;
+        margin: 25px 3vh 50px;
     }
 
-    /* -===================================== */
+    /* -===================
+    ================== */
+    
+    #section1 p {
+        margin: 10px 0 0;
+    }
 
     #section1 form .submit i {
         display: block;
@@ -542,23 +547,41 @@ footer .footNav ul li a:hover {
     #section1 nav {
         flex-direction: column;
         align-items: stretch;
+        margin-bottom: 30px;
+    }
+
+    #section1 nav ul {
+        margin: 0;
+        justify-content: space-between;
     }
 
     #section1 nav ul li {
-        width: 40%;
-        text-align: center;
+        width: 47%;
+        margin-left: 0;
+        margin-right: 0;
+
     }
 
     #section1 nav ul li a {
         font-size: 11px;
         padding: 1rem 0;
+       justify-content: flex-start;
+       padding-left: 10px;
     }
+
+    footer {
+        background: #F2F2F2;
+        margin: 50px 0 0;
+    }
+
 
     footer .footNav {
         flex-direction: column;
+        padding: 1.5vh 3vh 5vh;
     }
 
     footer .footNav div {
         width: 100%;
+        padding: 10px 0;
     }
 }
