@@ -307,6 +307,7 @@ main {
     display: flex;
     flex-direction: column;
     /* width: calc(33.33% - 20px); */
+    width: 33%;
 }
 
 #section2 .popular h2 {
@@ -328,6 +329,8 @@ main {
 
 #section2 .popular .cardsZone article {
     margin: 1rem 0;
+    height: 144px;
+    width: 100%;
 }
 
 #section2 .popular .cardsZone article .popularCards {
@@ -338,8 +341,8 @@ main {
     background: white;
     box-shadow: #0000006b 0 0 30px;
     color: black;
-    height: 144px;
-    width: 343px;
+    height: 100%;
+    width: 100%;
 }
 
 #section2 .popular .cardsZone article .popularCards .look img {
