@@ -546,11 +546,12 @@ footer .footNav ul li a:hover {
 
     #section1 nav ul li {
         width: 40%;
+        text-align: center;
     }
 
     #section1 nav ul li a {
         font-size: 11px;
-        padding: 1rem 1.3rem;
+        padding: 1rem 0;
     }
 
     footer .footNav {
