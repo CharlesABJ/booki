@@ -533,7 +533,7 @@ footer .footNav ul li a:hover {
 
     header .headNav ul li a {
         border-top: none;
-        border-bottom: solid 2px #ffffff;
+        border-bottom: solid 2px #F2F2F2;
         padding: 25px;
     }
 
@@ -546,12 +546,13 @@ footer .footNav ul li a:hover {
         margin: 25px 3vh 50px;
     }
 
-    /* -===================
-    ================== */
+    /*=====================
+    ===================== */
     
     #section1 p {
         margin: 10px 0 0;
     }
+    
 
     #section1 form .submit i {
         display: block;
@@ -585,6 +586,20 @@ footer .footNav ul li a:hover {
         padding: 1rem 0;
        justify-content: flex-start;
        padding-left: 10px;
+    }
+
+    #section1 nav ul li a i {
+       font-size: 20px;
+       margin-left: 3px;
+    }
+
+    #section1 nav+p {
+        align-items: baseline;
+    }
+
+    #section1 nav+p span i{
+        font-size: 12px;
+        padding: 6px 10px;
     }
 
     footer {
