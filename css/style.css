@@ -207,7 +207,6 @@ main {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
-    /* width: calc(66.66% - 10px); */
     width: 63%;
     height: 656px;
     display: flex;
@@ -306,7 +305,6 @@ main {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    /* width: calc(33.33% - 20px); */
     width: 33%;
 }
 
@@ -323,8 +321,8 @@ main {
 }
 
 #section2 .popular .cardsZone {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #section2 .popular .cardsZone article {
@@ -427,9 +425,9 @@ main {
     height: 100%;
 }
 
-#section3 .activity article .activityCards .look{
+#section3 .activity article .activityCards .look {
     height: 389px;
-   width: 100%;
+    width: 100%;
 }
 
 #section3 .activity article .activityCards .look img {
@@ -440,9 +438,9 @@ main {
 }
 
 #section3 .activity article .activityCards .description {
-  height: 56px;
-  display: flex;
- align-items: center;
+    height: 56px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -504,6 +502,45 @@ footer .footNav ul li a:hover {
 
 /* <==================== RESPONSIVE ON ====================< */
 
+@media screen and (max-width: 992px) {
+    #section2 {
+        flex-direction: column;
+    }
+
+    #section2 .housing {
+        width: 100%;
+    }
+
+    #section2 .popular {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #section2 .popular .cardsZone {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #section2 .popular .cardsZone article {
+        width: 31%;
+    }
+
+    /* --------------------------------------------------- */
+
+    #section3 .activity article {
+        height: 267px;
+    }
+
+    #section3 .activity article .activityCards .look {
+        height: 211px;
+    }
+
+}
+
+
+
+/* ================================================== */
+
 @media screen and (max-width: 768px) {
 
     header {
@@ -543,12 +580,16 @@ footer .footNav ul li a:hover {
     }
 
     main {
-        margin: 25px 3vh 50px;
+        margin: 0;
+
     }
 
     /*=====================
     ===================== */
-    
+
+    #section1{
+        margin: 30px 2.5vh 5px;
+    }
     #section1 p {
         margin: 10px 0 0;
     }
@@ -556,7 +597,7 @@ footer .footNav ul li a:hover {
     #section1 form #localisation {
         width: 100%;
     }
-    
+
     #section1 form .submit i {
         display: block;
         color: #ffffff;
@@ -578,38 +619,122 @@ footer .footNav ul li a:hover {
     }
 
     #section1 nav ul li {
-        width: 47%;
-        margin-left: 0;
-        margin-right: 0;
-
+        width: 47.5%;
+       margin: 9px 0;
     }
 
     #section1 nav ul li a {
-        font-size: 11px;
+        font-size: 12px;
         padding: 1rem 0;
-       justify-content: flex-start;
-       padding-left: 10px;
+        justify-content: flex-start;
+        padding-left: 10px;
     }
 
     #section1 nav ul li a i {
-       font-size: 20px;
-       margin-left: 3px;
+        font-size: 20px;
+        margin-left: 3px;
     }
 
     #section1 nav+p {
         align-items: baseline;
     }
 
-    #section1 nav+p span i{
+    #section1 nav+p span i {
         font-size: 12px;
         padding: 6px 10px;
     }
+
+
+    /*=====================
+    ===================== */
+    #section2 {
+        flex-direction: column-reverse;
+    }
+
+    #section2 .popular {
+        margin: 0;
+        border-radius: 0;
+        padding: 25px 2.5vh;
+        height: 580px;
+    }
+
+    #section2 .popular .cardsZone {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 0 0;
+        height: 87%;
+    }
+
+    #section2 .popular .cardsZone article {
+        width: 100%;
+        margin: 0;
+    }
+
+    #section2 .popular .cardsZone article .popularCards {
+        width: 100%;
+        margin: 0;
+        box-shadow: #0000006b 0 0 15px
+    }
+
+    #section2 .popular .cardsZone article .popularCards .look {
+        width: 135px;
+    }
+
+    #section2 .popular .cardsZone article .popularCards .description {
+        width: auto;
+    }
+
+
+    #section2 .housing {
+        background: none;
+        padding: 25px 2.5vh;
+        height: auto;
+    }
+
+    #section2 .housing .cardsZone article {
+        width: 100%;
+    }
+
+    #section2 .housing .cardsZone article .housingCards {
+        box-shadow: #0000006b 0 0 15px
+    }
+
+
+    /*=====================
+    ===================== */
+    #section3{
+        padding: 0 2.5vh;
+    }
+
+    #section3 h2{
+        margin: 0;
+        width: 110px;
+    }
+
+    #section3 .activity{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    #section3 .activity article{
+        width: 100%;
+        height: 190px;
+         box-shadow: #0000006b 0 0 15px;
+         margin-bottom: 30px;
+    }
+
+    #section3 .activity article .activityCards .look{
+        height: 134px;
+    }
+
+     /*=====================
+    ===================== */
+
 
     footer {
         background: #F2F2F2;
         margin: 50px 0 0;
     }
-
 
     footer .footNav {
         flex-direction: column;
