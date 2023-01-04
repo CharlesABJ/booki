@@ -552,8 +552,11 @@ footer .footNav ul li a:hover {
     #section1 p {
         margin: 10px 0 0;
     }
-    
 
+    #section1 form #localisation {
+        width: 100%;
+    }
+    
     #section1 form .submit i {
         display: block;
         color: #ffffff;
