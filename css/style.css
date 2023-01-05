@@ -10,7 +10,6 @@
 body {
     max-width: 1400px;
     margin: 0 auto;
-    /* Utiliser margin pour centrer horizontalement */
 }
 
 
@@ -347,7 +346,7 @@ main {
 
 
 #section2 .popular .cardsZone article .popularCards .look{
-  width: 137px;
+  width: 40%;
 }
 
 #section2 .popular .cardsZone article .popularCards .look img {
@@ -361,7 +360,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    width: 60%;
 }
 
 #section2 .popular .cardsZone article .popularCards .description h3 {
@@ -531,6 +530,7 @@ footer .footNav ul li a:hover {
 
     #section2 .popular .cardsZone article {
         width: 31%;
+        height: auto;
     }
 
     /* --------------------------------------------------- */
@@ -589,7 +589,6 @@ footer .footNav ul li a:hover {
 
     main {
         margin: 0;
-
     }
 
     /*=====================
@@ -675,6 +674,7 @@ footer .footNav ul li a:hover {
 
     #section2 .popular .cardsZone article {
         width: 100%;
+        height: 144px;
         margin: 0;
         box-shadow: #0000006b 0 0 15px
     }
