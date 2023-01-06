@@ -641,7 +641,7 @@ footer .footNav ul li a:hover {
         padding: 1rem 0;
         justify-content: flex-start;
         padding-left: 10px;
-        padding-right: 3px;
+        padding-right: 1px;
     }
 
     #section1 nav ul li a i {
