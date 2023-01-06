@@ -470,7 +470,7 @@ main {
 /* <==================== FOOTER ON ====================< */
 footer {
     background: #F2F2F2;
-    margin: 50px 50px 0 50px;
+    margin: 50px 40px 0;
 }
 
 footer .footNav {
@@ -511,7 +511,7 @@ footer .footNav ul li a:hover {
 
 
 /* <==================== RESPONSIVE ON ====================< */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     #section2 {
         flex-direction: column;
     }
@@ -548,7 +548,7 @@ footer .footNav ul li a:hover {
 
 
 /* ================================================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     header {
         flex-direction: column;
@@ -685,6 +685,10 @@ footer .footNav ul li a:hover {
         margin: 0;
     }
 
+    #section2 .popular .cardsZone article .popularCards .description {
+        margin: 10px 10px 0;
+    }
+
     #section2 .housing {
         background: none;
         padding: 25px 2.5vh 20px;
@@ -693,6 +697,10 @@ footer .footNav ul li a:hover {
 
     #section2 .housing .cardsZone article {
         width: 100%;
+    }
+
+    #section2 .housing .cardsZone article .housingCards .description {
+        margin: 0 5px;
     }
 
     #section2 .housing .seeMore {
