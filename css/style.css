@@ -13,9 +13,7 @@ body {
 }
 
 
-
 /* <==================== HEADER ON ====================< */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -46,18 +44,17 @@ header .headNav ul li a:hover {
     color: #0065FC;
 }
 
+
 /* >==================== HEADER OFF ====================> */
 
 
-/* <==================== PAGE CONTENT ON ====================< */
-
+/* <==================== MAIN ON ====================< */
 main {
     margin: 0 40px 50px;
 }
 
 
 /* ====== Section 1 ====== */
-
 #section1 h1 {
     font-size: 22px;
     margin: 0 0 7px 0;
@@ -69,7 +66,6 @@ main {
 
 
 /* ----Localisation---- */
-
 #section1 form {
     margin: 30px 0;
     display: flex;
@@ -83,7 +79,6 @@ main {
     align-items: center;
     border-radius: 15px 0 0 15px;
     cursor: pointer;
-
 }
 
 #section1 form button,
@@ -97,7 +92,6 @@ main {
     font-size: 16px;
 }
 
-
 #section1 form #localisation {
     border: solid 1px #F2F2F2;
     width: 210px;
@@ -106,7 +100,6 @@ main {
 #section1 form #localisation::placeholder {
     color: #000000;
 }
-
 
 #section1 form .submit {
     background: #0065FC;
@@ -124,7 +117,6 @@ main {
 
 
 /* ----Filtres---- */
-
 #section1 nav {
     display: flex;
     align-items: center;
@@ -190,9 +182,7 @@ main {
 }
 
 
-
 /* ====== Section 2 ====== */
-
 #section2 {
     display: flex;
     margin: 50px 0 0 0;
@@ -201,7 +191,6 @@ main {
 
 
 /* ---Housing--- */
-
 #section2 .housing {
     background: #F2F2F2;
     border-radius: 20px;
@@ -228,8 +217,14 @@ main {
     padding: 5px;
     width: 31%;
     border-radius: 20px;
-    box-shadow: #0000006b 0 0 30px;
+    box-shadow: #8f87876b 0 0 15px;
     background: white;
+    transition: 0.3s;
+}
+
+#section2 .housing .cardsZone article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
 }
 
 #section2 .housing .cardsZone article .housingCards {
@@ -241,7 +236,6 @@ main {
     border-radius: 20px;
     color: #000000;
 }
-
 
 #section2 .housing .cardsZone article .housingCards .look img {
     width: 100%;
@@ -260,7 +254,6 @@ main {
     margin: 0 5px 5px 5px;
 }
 
-
 #section2 .housing .cardsZone article .housingCards .description .housingRating {
     margin: 5px;
 }
@@ -271,16 +264,21 @@ main {
 }
 
 #section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
+    color: #0065fc54;
+    transition: 0.2s all;
+}
+
+#section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~.grey {
     color: #F2F2F2;
     transition: 0.2s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating :last-child {
+#section2 .housing .cardsZone article .housingCards .description .housingRating .grey {
     color: #F2F2F2;
     transition: 0.3s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating :last-child:hover {
+#section2 .housing .cardsZone article .housingCards .description .housingRating .grey:hover {
     color: #0065FC;
     transition: 0.2s all;
 }
@@ -294,11 +292,10 @@ main {
     width: 105px;
     padding: 5px;
     text-align: center;
-
 }
 
-/* ---Popular--- */
 
+/* ---Popular--- */
 #section2 .popular {
     background: #F2F2F2;
     border-radius: 20px;
@@ -313,7 +310,6 @@ main {
     display: flex;
     justify-content: space-between;
     font-size: 22px;
-
 }
 
 #section2 .popular h2 i {
@@ -331,8 +327,14 @@ main {
     padding: 5px;
     height: 144px;
     width: 100%;
-    box-shadow: #0000006b 0 0 30px;
+    box-shadow: #8f87876b 0 0 15px;
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+#section2 .popular .cardsZone article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
 }
 
 #section2 .popular .cardsZone article .popularCards {
@@ -344,9 +346,8 @@ main {
     width: 100%;
 }
 
-
-#section2 .popular .cardsZone article .popularCards .look{
-  width: 40%;
+#section2 .popular .cardsZone article .popularCards .look {
+    width: 40%;
 }
 
 #section2 .popular .cardsZone article .popularCards .look img {
@@ -385,22 +386,26 @@ main {
 }
 
 #section2 .popular .cardsZone article .popularCards .description .housingRating i:hover~i {
+    color: #0065fc54;
+    transition: 0.2s all;
+}
+
+#section2 .popular .cardsZone article .popularCards .description .housingRating i:hover~.grey {
     color: #F2F2F2;
     transition: 0.2s all;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating :last-child {
+#section2 .popular .cardsZone article .popularCards .description .housingRating .grey {
     color: #F2F2F2;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating :last-child:hover {
+#section2 .popular .cardsZone article .popularCards .description .housingRating .grey:hover {
     color: #0065FC;
     transition: 0.2s all;
 }
 
 
 /* ====== Section 3 ====== */
-
 #section3 {
     margin: 60px 0;
 }
@@ -420,7 +425,13 @@ main {
     width: 22.5%;
     height: 445px;
     border-radius: 20px;
-    box-shadow: #0000006b 0 0 20px;
+    box-shadow: #8f87876b 0 0 15px;
+    transition: 0.3s;
+}
+
+#section3 .activity article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
 }
 
 #section3 .activity article .activityCards {
@@ -450,18 +461,16 @@ main {
     align-items: center;
 }
 
-
 #section3 .activity article .activityCards .description h3 {
     font-size: 16px;
     padding: 0 15px;
 }
 
 
+/* >==================== MAIN OFF ====================> */
 
-/* >==================== PAGE CONTENT OF ====================> */
 
 /* <==================== FOOTER ON ====================< */
-
 footer {
     background: #F2F2F2;
     margin: 50px 50px 0 50px;
@@ -496,19 +505,15 @@ footer .footNav ul li a {
     font-size: 16px;
 }
 
-
 footer .footNav ul li a:hover {
     color: #5e5e5e;
 }
-
-
 
 
 /* >==================== FOOTER OF ====================> */
 
 
 /* <==================== RESPONSIVE ON ====================< */
-
 @media screen and (max-width: 992px) {
     #section2 {
         flex-direction: column;
@@ -534,7 +539,6 @@ footer .footNav ul li a:hover {
     }
 
     /* --------------------------------------------------- */
-
     #section3 .activity article {
         height: 267px;
     }
@@ -546,13 +550,10 @@ footer .footNav ul li a:hover {
 }
 
 
-
 /* ================================================== */
-
 @media screen and (max-width: 768px) {
 
     header {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -575,7 +576,6 @@ footer .footNav ul li a:hover {
         width: 100%;
     }
 
-
     header .headNav ul li a {
         border-top: none;
         border-bottom: solid 2px #F2F2F2;
@@ -591,12 +591,13 @@ footer .footNav ul li a:hover {
         margin: 0;
     }
 
-    /*=====================
-    ===================== */
 
-    #section1{
-        margin: 30px 2.5vh 5px;
+    /*=====================
+    =====================*/
+    #section1 {
+        margin: 30px 2.5vh;
     }
+
     #section1 p {
         margin: 10px 0 0;
     }
@@ -627,7 +628,7 @@ footer .footNav ul li a:hover {
 
     #section1 nav ul li {
         width: 47.5%;
-       margin: 9px 0;
+        margin: 9px 0;
     }
 
     #section1 nav ul li a {
@@ -653,9 +654,10 @@ footer .footNav ul li a:hover {
 
 
     /*=====================
-    ===================== */
+    =====================*/
     #section2 {
         flex-direction: column-reverse;
+        margin: 0;
     }
 
     #section2 .popular {
@@ -676,57 +678,56 @@ footer .footNav ul li a:hover {
         width: 100%;
         height: 144px;
         margin: 0;
-        box-shadow: #0000006b 0 0 15px
     }
-
 
     #section2 .housing {
         background: none;
-        padding: 25px 2.5vh;
+        padding: 25px 2.5vh 20px;
         height: auto;
     }
 
     #section2 .housing .cardsZone article {
         width: 100%;
-        box-shadow: #0000006b 0 0 15px
     }
 
+    #section2 .housing .seeMore {
+        display: none;
+    }
 
 
     /*=====================
-    ===================== */
-    #section3{
+    =====================*/
+    #section3 {
         padding: 0 2.5vh;
+        margin-bottom: 0;
     }
 
-    #section3 h2{
+    #section3 h2 {
         margin: 0;
         width: 110px;
     }
 
-    #section3 .activity{
+    #section3 .activity {
         margin-top: 10px;
         flex-direction: column;
     }
 
-    #section3 .activity article{
+    #section3 .activity article {
         width: 100%;
         height: 190px;
-         box-shadow: #0000006b 0 0 15px;
-         margin-bottom: 30px;
+        margin-bottom: 30px;
     }
 
-    #section3 .activity article .activityCards .look{
+    #section3 .activity article .activityCards .look {
         height: 134px;
     }
 
-     /*=====================
-    ===================== */
 
-
+    /*=====================
+    =====================*/
     footer {
         background: #F2F2F2;
-        margin: 50px 0 0;
+        margin: 45px 0 0;
     }
 
     footer .footNav {
