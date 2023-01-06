@@ -602,6 +602,14 @@ footer .footNav ul li a:hover {
         margin: 10px 0 0;
     }
 
+    #section1 form label,
+    .submit {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #section1 form #localisation {
         width: 100%;
     }
@@ -636,6 +644,7 @@ footer .footNav ul li a:hover {
         padding: 1rem 0;
         justify-content: flex-start;
         padding-left: 10px;
+        padding-right: 15px;
     }
 
     #section1 nav ul li a i {
