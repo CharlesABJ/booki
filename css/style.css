@@ -90,6 +90,7 @@ main {
     align-items: center;
     font-weight: bold;
     font-size: 16px;
+    outline: none;
 }
 
 #section1 form #localisation {
