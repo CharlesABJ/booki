@@ -179,7 +179,6 @@ main {
     padding: 5px 10px;
     border: #D9D9D9 solid 1px;
     border-radius: 24px;
-    cursor: pointer;
 }
 
 
@@ -513,6 +512,13 @@ footer .footNav ul li a:hover {
 
 /* <==================== RESPONSIVE ON ====================< */
 @media screen and (max-width: 991px) {
+
+    #section1 nav{
+        align-items: baseline;
+    }
+
+/* --------------------------------------------------- */
+  
     #section2 {
         flex-direction: column;
     }
