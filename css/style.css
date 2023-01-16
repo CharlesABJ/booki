@@ -54,24 +54,24 @@ main {
 }
 
 
-/* ====== Section 1 ====== */
-#section1 h1 {
+/* ====== SearchZone ====== */
+#SearchZone h1 {
     font-size: 22px;
     margin: 0 0 7px 0;
 }
 
-#section1 p {
+#SearchZone p {
     font-size: 16px;
 }
 
 
 /* ----Localisation---- */
-#section1 form {
+#SearchZone form {
     margin: 30px 0;
     display: flex;
 }
 
-#section1 form label {
+#SearchZone form label {
     background: #F2F2F2;
     width: 50px;
     display: flex;
@@ -81,8 +81,8 @@ main {
     cursor: pointer;
 }
 
-#section1 form button,
-#section1 form input {
+#SearchZone form button,
+#SearchZone form input {
     margin: 0;
     padding: 10px;
     height: 49px;
@@ -93,16 +93,16 @@ main {
     outline: none;
 }
 
-#section1 form #localisation {
+#SearchZone form #localisation {
     border: solid 1px #F2F2F2;
     width: 210px;
 }
 
-#section1 form #localisation::placeholder {
+#SearchZone form #localisation::placeholder {
     color: #000000;
 }
 
-#section1 form .submit {
+#SearchZone form .submit {
     background: #0065FC;
     color: #ffffff;
     border: none;
@@ -111,36 +111,36 @@ main {
     cursor: pointer;
 }
 
-#section1 form .submit i {
+#SearchZone form .submit i {
     display: none;
     color: #ffffff;
 }
 
 
 /* ----Filtres---- */
-#section1 nav {
+#SearchZone nav {
     display: flex;
     align-items: center;
     font-weight: bold;
     margin: 30px 0 40px 0;
 }
 
-#section1 nav p {
+#SearchZone nav p {
     font-size: 18px;
 }
 
-#section1 nav ul {
+#SearchZone nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0 0 0 15px;
 }
 
-#section1 nav ul li {
+#SearchZone nav ul li {
     margin: 10px 15px;
 }
 
-#section1 nav ul li a {
+#SearchZone nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,29 +152,29 @@ main {
     padding: 0.7rem 1.3rem;
 }
 
-#section1 nav ul li a:hover {
+#SearchZone nav ul li a:hover {
     transition: 0.4s all;
     background: #DEEBFF;
 }
 
-#section1 nav ul li a i {
+#SearchZone nav ul li a i {
     margin: 0 7px 0 0;
     color: #0065FC;
 }
 
-#section1 nav+p {
+#SearchZone nav+p {
     display: flex;
     align-items: center;
     font-size: 16px;
 }
 
-#section1 p span {
+#SearchZone p span {
     margin: 0 8px 0 0;
     display: flex;
     justify-content: center;
 }
 
-#section1 p span i {
+#SearchZone p span i {
     color: #0065FC;
     padding: 5px 10px;
     border: #D9D9D9 solid 1px;
@@ -182,8 +182,8 @@ main {
 }
 
 
-/* ====== Section 2 ====== */
-#section2 {
+/* ====== HousingZone ====== */
+#HousingZone {
     display: flex;
     margin: 50px 0 0 0;
     justify-content: space-between;
@@ -191,7 +191,7 @@ main {
 
 
 /* ---Housing--- */
-#section2 .housing {
+#HousingZone .housing {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
@@ -201,18 +201,18 @@ main {
     flex-direction: column;
 }
 
-#section2 .housing h2 {
+#HousingZone .housing h2 {
     margin: 0 0 10px 0;
     font-size: 22px;
 }
 
-#section2 .housing .cardsZone {
+#HousingZone .housing .cardsZone {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#section2 .housing .cardsZone article {
+#HousingZone .housing .cardsZone article {
     margin: 1rem 0;
     padding: 5px;
     width: 31%;
@@ -222,12 +222,12 @@ main {
     transition: 0.3s;
 }
 
-#section2 .housing .cardsZone article:hover {
+#HousingZone .housing .cardsZone article:hover {
     transform: scale(1.015);
     transition: 0.3s;
 }
 
-#section2 .housing .cardsZone article .housingCards {
+#HousingZone .housing .cardsZone article .housingCards {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -237,53 +237,53 @@ main {
     color: #000000;
 }
 
-#section2 .housing .cardsZone article .housingCards .look img {
+#HousingZone .housing .cardsZone article .housingCards .look img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-#section2 .housing .cardsZone article .housingCards .description h3 {
+#HousingZone .housing .cardsZone article .housingCards .description h3 {
     font-size: 16px;
     margin: 5px;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingPrice {
+#HousingZone .housing .cardsZone article .housingCards .description .housingPrice {
     font-size: 14px;
     margin: 0 5px 5px 5px;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating {
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating {
     margin: 5px;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating i {
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating i {
     color: #0065FC;
     transition: 1s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
     color: #0065fc54;
     transition: 0.2s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating i:hover~.grey {
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating i:hover~.grey {
     color: #F2F2F2;
     transition: 0.2s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating .grey {
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating .grey {
     color: #F2F2F2;
     transition: 0.3s all;
 }
 
-#section2 .housing .cardsZone article .housingCards .description .housingRating .grey:hover {
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating .grey:hover {
     color: #0065FC;
     transition: 0.2s all;
 }
 
-#section2 .housing> :last-child {
+#HousingZone .housing> :last-child {
     text-decoration: none;
     font-weight: bold;
     align-items: flex-end;
@@ -291,12 +291,11 @@ main {
     margin-top: auto;
     width: 105px;
     padding: 5px;
-    text-align: center;
 }
 
 
 /* ---Popular--- */
-#section2 .popular {
+#HousingZone .popular {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
@@ -305,23 +304,23 @@ main {
     width: 33%;
 }
 
-#section2 .popular h2 {
+#HousingZone .popular h2 {
     margin: 0 0 10px 0;
     display: flex;
     justify-content: space-between;
     font-size: 22px;
 }
 
-#section2 .popular h2 i {
+#HousingZone .popular h2 i {
     color: #0065FC;
 }
 
-#section2 .popular .cardsZone {
+#HousingZone .popular .cardsZone {
     display: flex;
     flex-direction: column;
 }
 
-#section2 .popular .cardsZone article {
+#HousingZone .popular .cardsZone article {
     background: white;
     margin: 1rem 0;
     padding: 5px;
@@ -332,12 +331,12 @@ main {
     transition: 0.3s;
 }
 
-#section2 .popular .cardsZone article:hover {
+#HousingZone .popular .cardsZone article:hover {
     transform: scale(1.015);
     transition: 0.3s;
 }
 
-#section2 .popular .cardsZone article .popularCards {
+#HousingZone .popular .cardsZone article .popularCards {
     display: flex;
     text-decoration: none;
     border-radius: 20px;
@@ -346,79 +345,79 @@ main {
     width: 100%;
 }
 
-#section2 .popular .cardsZone article .popularCards .look {
+#HousingZone .popular .cardsZone article .popularCards .look {
     width: 40%;
 }
 
-#section2 .popular .cardsZone article .popularCards .look img {
+#HousingZone .popular .cardsZone article .popularCards .look img {
     width: 100%;
     height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 
-#section2 .popular .cardsZone article .popularCards .description {
+#HousingZone .popular .cardsZone article .popularCards .description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
 }
 
-#section2 .popular .cardsZone article .popularCards .description h3 {
+#HousingZone .popular .cardsZone article .popularCards .description h3 {
     font-size: 16px;
     margin: 5px;
 }
 
-#section2 .popular .cardsZone article .popularCards .description p {
+#HousingZone .popular .cardsZone article .popularCards .description p {
     font-size: 14px;
     margin: 0 5px 5px 5px;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating {
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating {
     margin: 5px;
     display: flex;
     padding: 5px 0;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating i {
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating i {
     color: #0065FC;
     transition: 1s all;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating i:hover~i {
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating i:hover~i {
     color: #0065fc54;
     transition: 0.2s all;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating i:hover~.grey {
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating i:hover~.grey {
     color: #F2F2F2;
     transition: 0.2s all;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating .grey {
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating .grey {
     color: #F2F2F2;
 }
 
-#section2 .popular .cardsZone article .popularCards .description .housingRating .grey:hover {
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating .grey:hover {
     color: #0065FC;
     transition: 0.2s all;
 }
 
 
-/* ====== Section 3 ====== */
-#section3 h2 {
+/* ====== ActivityZone ====== */
+#ActivityZone h2 {
     margin: 0 0 30px 0;
     padding-top: 50px;
     font-size: 22px;
 }
 
-#section3 .activity {
+#ActivityZone .activity {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#section3 .activity article {
+#ActivityZone .activity article {
     width: 22.5%;
     height: 445px;
     border-radius: 20px;
@@ -426,12 +425,12 @@ main {
     transition: 0.3s;
 }
 
-#section3 .activity article:hover {
+#ActivityZone .activity article:hover {
     transform: scale(1.015);
     transition: 0.3s;
 }
 
-#section3 .activity article .activityCards {
+#ActivityZone .activity article .activityCards {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -440,25 +439,25 @@ main {
     height: 100%;
 }
 
-#section3 .activity article .activityCards .look {
+#ActivityZone .activity article .activityCards .look {
     height: 389px;
     width: 100%;
 }
 
-#section3 .activity article .activityCards .look img {
+#ActivityZone .activity article .activityCards .look img {
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-#section3 .activity article .activityCards .description {
+#ActivityZone .activity article .activityCards .description {
     height: 56px;
     display: flex;
     align-items: center;
 }
 
-#section3 .activity article .activityCards .description h3 {
+#ActivityZone .activity article .activityCards .description h3 {
     font-size: 16px;
     padding: 0 15px;
 }
@@ -513,41 +512,41 @@ footer .footNav ul li a:hover {
 /* <==================== RESPONSIVE ON ====================< */
 @media screen and (max-width: 991px) {
 
-    #section1 nav{
+    #SearchZone nav{
         align-items: baseline;
     }
 
 /* --------------------------------------------------- */
   
-    #section2 {
+    #HousingZone {
         flex-direction: column;
     }
 
-    #section2 .housing {
+    #HousingZone .housing {
         width: 100%;
     }
 
-    #section2 .popular {
+    #HousingZone .popular {
         margin-top: 50px;
         width: 100%;
     }
 
-    #section2 .popular .cardsZone {
+    #HousingZone .popular .cardsZone {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    #section2 .popular .cardsZone article {
+    #HousingZone .popular .cardsZone article {
         width: 31%;
         height: auto;
     }
 
     /* --------------------------------------------------- */
-    #section3 .activity article {
+    #ActivityZone .activity article {
         height: 267px;
     }
 
-    #section3 .activity article .activityCards .look {
+    #ActivityZone .activity article .activityCards .look {
         height: 211px;
     }
 
@@ -598,15 +597,15 @@ footer .footNav ul li a:hover {
 
     /*=====================
     =====================*/
-    #section1 {
+    #SearchZone {
         margin: 30px 2.5vh;
     }
 
-    #section1 p {
+    #SearchZone p {
         margin: 10px 0 0;
     }
 
-    #section1 form label,
+    #SearchZone form label,
     .submit {
         width: 60px;
         display: flex;
@@ -614,36 +613,36 @@ footer .footNav ul li a:hover {
         align-items: center;
     }
 
-    #section1 form #localisation {
+    #SearchZone form #localisation {
         width: 100%;
     }
 
-    #section1 form .submit i {
+    #SearchZone form .submit i {
         display: block;
         color: #ffffff;
     }
 
-    #section1 form .submit span {
+    #SearchZone form .submit span {
         display: none;
     }
 
-    #section1 nav {
+    #SearchZone nav {
         flex-direction: column;
         align-items: stretch;
         margin-bottom: 30px;
     }
 
-    #section1 nav ul {
+    #SearchZone nav ul {
         margin: 0;
         justify-content: space-between;
     }
 
-    #section1 nav ul li {
+    #SearchZone nav ul li {
         width: 47.5%;
         margin: 9px 0;
     }
 
-    #section1 nav ul li a {
+    #SearchZone nav ul li a {
         font-size: 12px;
         padding: 1rem 0;
         justify-content: flex-start;
@@ -651,16 +650,16 @@ footer .footNav ul li a:hover {
         padding-right: 10px;
     }
 
-    #section1 nav ul li a i {
+    #SearchZone nav ul li a i {
         font-size: 20px;
         margin-left: 3px;
     }
 
-    #section1 nav+p {
+    #SearchZone nav+p {
         align-items: baseline;
     }
 
-    #section1 nav+p span i {
+    #SearchZone nav+p span i {
         font-size: 12px;
         padding: 6px 10px;
     }
@@ -668,77 +667,77 @@ footer .footNav ul li a:hover {
 
     /*=====================
     =====================*/
-    #section2 {
+    #HousingZone {
         flex-direction: column-reverse;
         margin: 0;
     }
 
-    #section2 .popular {
+    #HousingZone .popular {
         margin: 0;
         border-radius: 0;
         padding: 25px 2.5vh;
         height: 580px;
     }
 
-    #section2 .popular .cardsZone {
+    #HousingZone .popular .cardsZone {
         flex-direction: column;
         justify-content: space-between;
         margin: 10px 0 0;
         height: 87%;
     }
 
-    #section2 .popular .cardsZone article {
+    #HousingZone .popular .cardsZone article {
         width: 100%;
         height: 144px;
         margin: 0;
     }
 
-    #section2 .popular .cardsZone article .popularCards .description {
+    #HousingZone .popular .cardsZone article .popularCards .description {
         margin: 10px 10px 0;
     }
 
-    #section2 .housing {
+    #HousingZone .housing {
         background: none;
         padding: 25px 2.5vh 20px;
         height: auto;
     }
 
-    #section2 .housing .cardsZone article {
+    #HousingZone .housing .cardsZone article {
         width: 100%;
     }
 
-    #section2 .housing .cardsZone article .housingCards .description {
+    #HousingZone .housing .cardsZone article .housingCards .description {
         margin: 0 5px;
     }
 
-    #section2 .housing .seeMore {
+    #HousingZone .housing .seeMore {
         display: none;
     }
 
 
     /*=====================
     =====================*/
-    #section3 {
+    #ActivityZone {
         padding: 0 2.5vh;
     }
 
-    #section3 h2 {
+    #ActivityZone h2 {
         margin: 0;
         width: 110px;
     }
 
-    #section3 .activity {
+    #ActivityZone .activity {
         margin-top: 10px;
         flex-direction: column;
     }
 
-    #section3 .activity article {
+    #ActivityZone .activity article {
         width: 100%;
         height: 190px;
         margin-bottom: 30px;
     }
 
-    #section3 .activity article .activityCards .look {
+    #ActivityZone .activity article .activityCards .look {
         height: 134px;
     }
 
