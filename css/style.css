@@ -9,6 +9,7 @@
 
 body {
     max-width: 1400px;
+    min-width: 360px;
     margin: 0 auto;
 }
 
@@ -137,7 +138,7 @@ main {
 }
 
 #SearchZone nav ul li {
-    margin: 10px 15px;
+    margin: 10px 1.3vw;
 }
 
 #SearchZone nav ul li a {
@@ -146,7 +147,7 @@ main {
     align-items: center;
     color: #000000;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.5vw;
     border: solid 2px #D9D9D9;
     border-radius: 25px;
     padding: 0.7rem 1.3rem;
@@ -313,6 +314,7 @@ main {
 
 #HousingZone .popular h2 i {
     color: #0065FC;
+    padding-left: 20px;
 }
 
 #HousingZone .popular .cardsZone {
@@ -646,7 +648,7 @@ footer .footNav ul li a:hover {
         font-size: 12px;
         padding: 1rem 0;
         justify-content: flex-start;
-        padding-left: 10px;
+        padding-left: 9px;
         padding-right: 10px;
     }
 
