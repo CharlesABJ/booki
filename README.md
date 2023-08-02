@@ -12,4 +12,4 @@ Construit avec :
 » HTML5 </br>
 » Vanila CSS
 
-Photo du projet 📸
+Photo du projet 📸 </br>
